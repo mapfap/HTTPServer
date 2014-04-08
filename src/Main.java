@@ -1,10 +1,12 @@
 public class Main {
 	public static void main(String[] args) {
-		new ESServer(5000, new ExpertSystem() {
+		new Server(5000, new Process() {
+
 			@Override
-			public String getAnswer(String question) {
-				return question;
+			public String run(String input) {
+				return "Thank you.";
 			}
+		
 		});
 	}
 }
